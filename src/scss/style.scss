@@ -1,0 +1,12 @@
+// ПОДКЛЮЧЕНИЕ ШРИФТОВ GOOGLE FONTS //
+@import "fonts"; 
+@import "icons"; 
+@import "header"; 
+
+body{
+  font-family: $fontFamily;
+  span
+  {
+    color: red;
+  }
+}
