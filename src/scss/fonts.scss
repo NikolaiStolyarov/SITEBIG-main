@@ -8,9 +8,9 @@ $minwidth: 320px;
 $maxwidth: 1152px;
 $maxWidthContainer: 856px;
 $md1: $maxWidthContainer + 12;
-$md2: 991.98px;
-$md3: 767.98px;
-$md4: 479.98px;
+$md2: 991px;
+$md3: 767px;
+$md4: 479px;
 
 // Обнуление общих параметров
 @import "null";
@@ -38,17 +38,18 @@ body {
   max-width: $maxWidthContainer;
   margin: 0 auto;
   @media (max-width: $md1) {
-    max-width: 970px;
-  }
-  @media (max-width: $md2) {
     max-width: 750px;
   }
-  @media (max-width: $md3) {
+  @media (max-width: $md2) {
     max-width: none;
     padding: 0 10px;
   }
 }
 
+
+.page {
+  flex: 1 1 auto
+}
 // Подключение Файлов UI Стилей, Формы и Готовых Классов
 //@import "forms";
 //@import "ui";
