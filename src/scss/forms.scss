@@ -1,0 +1,59 @@
+//FORM
+.form {
+  &__row{
+  }
+  &__column{
+  }
+  &__line{
+
+  }
+  &__input{
+
+  }
+  &__button{
+
+  }
+  &__error{
+
+  }
+}
+
+//<BUTTONS (a.btn+tab)>=============================================================================================
+
+.btn{
+  background-color: #FF6464;
+  color: #FFFFFF;
+  border-radius: 2px;
+  height: 45px;
+  font-family: 'Heebo';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.45 * 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+  transition: background-color all 0.3s ease 0s;
+  @media (min-width:992px){
+    &:hover{
+      background-color:  #eb5050;
+    }
+  }
+  &._fw{
+    width:100%;
+  }
+}
+
+//<BUTTONS (a.btn+tab)>=============================================================================================
+
+//<SELECT.(se1+tab)>=============================================================================================
+
+.select {
+  position: relative;
+  &__item{
+    position:relative;
+  }
+}
+
+//<SELECT.(se1+tab)>=============================================================================================

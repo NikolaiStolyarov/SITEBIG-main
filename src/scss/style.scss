@@ -1,13 +1,11 @@
-// ПОДКЛЮЧЕНИЕ ШРИФТОВ GOOGLE FONTS //
+@import "null";
+@import "foundation"; 
 @import "mixins"; 
 @import "icons"; 
 @import "fonts"; 
 @import "header"; 
+@import "ui"; 
+@import "forms"; 
+@import "home"; 
 
-body{
-  font-family: $fontFamily;
-  span
-  {
-    color: red;
-  }
-}
+//ОСНОВА

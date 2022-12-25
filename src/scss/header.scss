@@ -1,6 +1,10 @@
-.header {
-    // .header__content
-  &__content {
+.header 
+{
+  position: relative;
+  z-index: 100;
+  // .header__content
+  &__content 
+  {
     max-width: 1052px;
     padding: 0px 10px;
     margin: 0 auto;
@@ -23,22 +27,20 @@
   }
   //.menu__body
   &__body {
-    @media (max-width: $md3) 
-    {
-    transform: translate(0px, -100%);
-    transition: transform 0.8s ease 0s;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: auto;
-    padding: 70px 10px 30px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    &._active
-    {
-      transform: translate(0px, 0%);
-    }
+    @media (max-width: $md3) {
+      transform: translate(0px, -100%);
+      transition: transform 0.8s ease 0s;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: auto;
+      padding: 70px 10px 30px 10px;
+      background-color: rgba(255, 255, 255, 0.95);
+      &._active {
+        transform: translate(0px, 0%);
+      }
     }
   }
   //.menu__list

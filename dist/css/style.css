@@ -1,46 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap&subset=cyrillic-ext");
-@font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff"), format("woff"), url("../fonts/icons.woff2#icons"), format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=_icon-]:before,
-[class*=_icon-]:before {
-  font-family: "icons";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^=_icon-]:before,
-[class*=_icon-]:before {
-  display: block;
-}
-
-._icon-fb:before {
-  content: "\e900";
-}
-
-._icon-insta:before {
-  content: "\e901";
-}
-
-._icon-Group:before {
-  content: "\e902";
-}
-
-._icon-Linkedin:before {
-  content: "\e903";
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -116,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*обнуление почти всех поднастроек гугл хрома для html */
 body {
-  color: #000;
+  color: #21243D;
   font-size: 14px;
 }
 body._lock {
@@ -137,19 +96,75 @@ body._lock {
 @media (max-width: 868px) {
   ._container {
     max-width: 750px;
+    padding: 0 50px;
   }
 }
 @media (max-width: 991px) {
   ._container {
     max-width: none;
-    padding: 0 10px;
+    padding: 0 25px;
   }
 }
 
 .page {
+  padding: 90px 0px 0px 0px;
   flex: 1 1 auto;
 }
+@media (max-width: 767px) {
+  .page {
+    padding: 30px 0px 0px 0px;
+  }
+}
 
+body {
+  font-family: "Heebo";
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff"), format("woff"), url("../fonts/icons.woff2#icons"), format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=_icon-]:before,
+[class*=_icon-]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=_icon-]:before,
+[class*=_icon-]:before {
+  display: block;
+}
+
+._icon-fb:before {
+  content: "\e900";
+}
+
+._icon-insta:before {
+  content: "\e901";
+}
+
+._icon-Group:before {
+  content: "\e902";
+}
+
+._icon-Linkedin:before {
+  content: "\e903";
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+}
 .header__content {
   max-width: 1052px;
   padding: 0px 10px;
@@ -179,7 +194,7 @@ body._lock {
     left: 0;
     overflow: auto;
     padding: 70px 10px 30px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
   }
   .menu__body._active {
     transform: translate(0px, 0%);
@@ -259,9 +274,198 @@ body._lock {
   }
 }
 
-body {
-  font-family: "Heebo";
+.title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 140%;
 }
-body span {
-  color: red;
+@media (max-width: 767px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-family: "Heebo";
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.title-posts {
+  font-size: 22px;
+}
+@media (max-width: 767px) {
+  .title-posts {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.row:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.rub:after {
+  content: "P";
+}
+
+.btn {
+  background-color: #FF6464;
+  color: #FFFFFF;
+  border-radius: 2px;
+  height: 45px;
+  font-family: "Heebo";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+  transition: background-color all 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+  .btn:hover {
+    background-color: #eb5050;
+  }
+}
+.btn._fw {
+  width: 100%;
+}
+
+.select {
+  position: relative;
+}
+.select__item {
+  position: relative;
+}
+
+.hello {
+  padding: 33px 0px 70px 0px;
+}
+@media (max-width: 868px) {
+  .hello {
+    padding: 0px 0px 70px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .hello {
+    padding: 0px 0px 60px 0px;
+  }
+}
+.hello__container {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .hello__container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+}
+.hello__content {
+  align-items: flex-start;
+  padding: 18px 110px 0px 0px;
+  flex: 1 1 auto;
+}
+.hello__content *:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 868px) {
+  .hello__content {
+    padding: 18px 50px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .hello__content {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.hello__title {
+  margin: 0px 0px 25px 0px;
+}
+@media (max-width: 767px) {
+  .hello__title {
+    margin: 0px 0px 20px 0px;
+  }
+}
+.hello__text {
+  margin: 0px 0px 25px 0px;
+}
+@media (max-width: 767px) {
+  .hello__text {
+    padding: 0px 15px;
+    margin: 0px 0px 20px 0px;
+  }
+}
+.hello__btn {
+  margin: 0px 0px 25px 0px;
+}
+@media (max-width: 767px) {
+  .hello__btn {
+    margin: 0px 0px 20px 0px;
+  }
+}
+.hello__avatar {
+  flex: 0 0 243px;
+  height: 243px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: -5px 15px 0px 0px #EDF7FA;
+}
+.hello__avatar img {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .hello__avatar {
+    width: 170px;
+    height: 170px;
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.recent-posts {
+  background: #EDF7FA;
+  padding: 25px 0px 30px 0px;
+}
+.recent-posts__header {
+  display: flex;
+  margin: 0px 0px 10px 0px;
+}
+.recent-posts__title {
+  padding: 0px 20px 0px 0px;
+  flex: 1 1 auto;
+}
+.recent-posts__view-all {
+  flex: none;
+  font-size: 16px;
+  line-height: 23px;
+  color: #00A8CC;
+}
+@media (max-width: 767px) {
+  .recent-posts__view-all {
+    display: none;
+  }
+}
+.recent-posts__items {
+  display: flex;
+  margin: 0px -10px;
+}
+.recent-posts__column {
+  flex: 0 1 50%;
+  padding: 0px 10px;
+}
+.recent-post {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+}
+.recent-post__title {
+  color: inherit;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 140%;
 }

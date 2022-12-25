@@ -1,0 +1,54 @@
+// Основной блок
+
+.title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.4 * 100%;
+  @media (max-width: $md3)
+  {
+    font-size: 32px;
+  }
+}
+.text {
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 1.4 * 100%; 
+}
+
+.title-posts
+{
+  font-size: 22px;
+  @media(max-width: $md3)
+  {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+// Готовые классы
+.row:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.rub:after {
+  content: "P";
+}
+
+
+//====================================================================================================
+%noselect {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
