@@ -12,13 +12,30 @@ if (currentPage === "/article.html") {
   const menu = document.querySelectorAll('.menu__link')[0];
   menu.classList.toggle('_active');
 }
-
 if (currentPage === "/blog.html") {
   const menu = document.querySelectorAll('.menu__link')[1];
   menu.classList.toggle('_active');
 }
-
 if (currentPage === "/index.html") {
+  const menu = document.querySelectorAll('.menu__link')[2];
+  menu.classList.toggle('_active');
+}
+
+
+
+if (currentPage === "/SITEBIG-main/dist/works.html") {
+  const menu = document.querySelectorAll('.menu__link')[0];
+  menu.classList.toggle('_active');
+}
+if (currentPage === "/SITEBIG-main/dist/article.html") {
+  const menu = document.querySelectorAll('.menu__link')[0];
+  menu.classList.toggle('_active');
+}
+if (currentPage === "/SITEBIG-main/dist/blog.html") {
+  const menu = document.querySelectorAll('.menu__link')[1];
+  menu.classList.toggle('_active');
+}
+if (currentPage === "/SITEBIG-main/dist/index.html") {
   const menu = document.querySelectorAll('.menu__link')[2];
   menu.classList.toggle('_active');
 }
